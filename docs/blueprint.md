@@ -15,7 +15,7 @@
 - Primary color: Deep blue (#2E5266) to evoke trust and security.
 - Background color: Light gray (#F0F4F7), a very desaturated hue of the primary color, for a clean, modern look.
 - Accent color: Teal (#26A69A) for interactive elements and highlights.
+- A clean, intuitive layout focusing on data visualization and ease of navigation.
 - Body and headline font: 'Inter', a sans-serif, for a clean, modern, readable interface.
 - Use a consistent set of financial-themed icons to enhance UX.
-- A clean, intuitive layout focusing on data visualization and ease of navigation.
 - Subtle transitions and animations to provide feedback and enhance user engagement.
