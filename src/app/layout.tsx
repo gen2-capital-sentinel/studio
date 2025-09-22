@@ -24,7 +24,6 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased h-full">
-        <div className="bg-image-wrapper" data-ai-hint="landscape cinematic"></div>
         <AuthProvider>
           {children}
           <Toaster />
