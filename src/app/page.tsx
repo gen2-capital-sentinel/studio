@@ -109,10 +109,13 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="how-it-works" className="relative py-16 text-white md:py-24">
+        <section id="how-it-works" className="relative py-16 text-white md:py-24 overflow-hidden">
            <div
             className="absolute inset-0 bg-cover bg-center brightness-50"
-            style={{ backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Homepage_Banner_Background.png')" }}
+            style={{ 
+              backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Homepage_Banner_Background.png')",
+              transform: 'scale(1.1)' 
+            }}
             data-ai-hint="financial district architecture"
           />
           <div className="container relative z-10 mx-auto px-4">
