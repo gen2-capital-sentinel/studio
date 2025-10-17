@@ -1,10 +1,15 @@
-import { AreaChart } from 'lucide-react';
+import Image from 'next/image';
 
 export function Logo() {
   return (
     <div className="flex items-center gap-2">
-      <AreaChart className="h-6 w-6 text-primary" />
-      <h1 className="text-xl font-Jost text-foreground">Gen2 Wealth</h1>
+      <Image
+        src="https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Gen2_logo.png"
+        alt="Gen2 Wealth logo"
+        width={130}
+        height={28}
+        priority
+      />
     </div>
   );
 }
