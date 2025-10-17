@@ -109,34 +109,28 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="how-it-works" className="relative py-16 text-white md:py-24 overflow-hidden">
-           <div
-            className="absolute inset-0 bg-cover bg-center brightness-50"
-            style={{ 
-              backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Homepage_Banner_Background.png')",
-              transform: 'scale(1.1)' 
-            }}
-            data-ai-hint="financial district architecture"
-          />
-          <div className="container relative z-10 mx-auto px-4">
+        <section id="how-it-works" className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
-              <p className="mt-4 text-lg text-white/80">
+              <p className="mt-4 text-lg text-muted-foreground">
                 Getting started on your journey to financial freedom is simple.
               </p>
             </div>
-            <div className="grid gap-12 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-3">
               {howItWorks.map((item) => (
-                <div key={item.step} className="relative flex flex-col items-center text-center">
-                  <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-background/10 backdrop-blur-sm shadow-md">
-                    {item.icon}
-                  </div>
-                  <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-white/80">{item.description}</p>
-                   <div className="absolute -top-6 -right-2 text-8xl font-bold text-white/5 -z-10">
-                    {item.step}
-                  </div>
-                </div>
+                <Card key={item.step} className="relative flex flex-col items-center overflow-hidden text-center bg-secondary/50">
+                   <CardContent className="flex flex-col items-center p-8">
+                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-md">
+                        {item.icon}
+                    </div>
+                    <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
+                    <p className="mt-2 text-muted-foreground">{item.description}</p>
+                    <div className="absolute -top-5 -right-5 text-8xl font-bold text-foreground/5 -z-0">
+                        {item.step}
+                    </div>
+                   </CardContent>
+                </Card>
               ))}
             </div>
           </div>
