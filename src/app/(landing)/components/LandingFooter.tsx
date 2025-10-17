@@ -30,7 +30,7 @@ export function LandingFooter() {
   ]
 
   return (
-    <footer className="bg-secondary">
+    <footer className="bg-background text-foreground dark:bg-[hsl(204_38%_10%)] dark:text-[hsl(206_28%_95%)]">
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-3">
