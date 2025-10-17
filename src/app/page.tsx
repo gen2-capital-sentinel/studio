@@ -150,7 +150,7 @@ export default function Home() {
               </p>
             </div>
             <div className="space-y-8">
-              {benefit.map((benefit, index) => (
+              {benefits.map((benefit, index) => (
                 <div key={index}>
                   <h3 className="text-xl font-semibold">{benefit.title}</h3>
                   <p className="mt-1 text-muted-foreground">{benefit.description}</p>
