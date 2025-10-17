@@ -112,7 +112,7 @@ export default function Home() {
         <section id="how-it-works" className="relative py-16 text-white md:py-24">
            <div
             className="absolute inset-0 bg-cover bg-center brightness-50"
-            style={{ backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/dao-en-wong.jpg')" }}
+            style={{ backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Homepage_Banner_Background.png')" }}
             data-ai-hint="financial district architecture"
           />
           <div className="container relative z-10 mx-auto px-4">
