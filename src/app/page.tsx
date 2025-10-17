@@ -163,8 +163,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="cta" className="bg-primary text-primary-foreground py-16 md:py-24">
-          <div className="container mx-auto px-4 text-center">
+        <section id="cta" className="relative text-primary-foreground py-16 md:py-24 text-center overflow-hidden">
+           <div
+            className="absolute inset-0 bg-cover bg-center brightness-50"
+            style={{ 
+              backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Homepage_Section_Background.png')",
+              transform: 'scale(1.1)' 
+            }}
+            data-ai-hint="modern city"
+          />
+          <div className="container relative z-10 mx-auto px-4">
              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
               Ready to build your legacy?
             </h2>
