@@ -4,6 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Bot, BarChart, Shield, UserPlus, Banknote, Landmark } from 'lucide-react';
 import { LandingHeader } from './(landing)/components/LandingHeader';
 import { LandingFooter } from './(landing)/components/LandingFooter';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   const features = [
@@ -58,7 +60,14 @@ export default function Home() {
       title: 'Secure and Transparent',
       description: 'We prioritize your security and provide full transparency into your investments and our fees. No hidden costs.',
     },
-  ]
+  ];
+
+  const team = [
+    PlaceHolderImages.find(p => p.id === 'team-member-1'),
+    PlaceHolderImages.find(p => p.id === 'team-member-2'),
+    PlaceHolderImages.find(p => p.id === 'team-member-3'),
+    PlaceHolderImages.find(p => p.id === 'team-member-4'),
+  ].map(p => ({ ...p, name: p?.description.split(',')[0], title: p?.description.split(',')[1] }));
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -152,6 +161,38 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">{benefit.title}</h3>
                   <p className="mt-1 text-muted-foreground">{benefit.description}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="about-us" className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+                Meet Our Team
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                We are a passionate team of innovators, financial experts, and technologists dedicated to democratizing wealth management.
+              </p>
+            </div>
+            <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+              {team.map((member) => (
+                member && (
+                  <div key={member.name} className="text-center">
+                    <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full">
+                       <Image
+                        src={member.imageUrl}
+                        alt={`Photo of ${member.name}`}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={member.imageHint}
+                      />
+                    </div>
+                    <h3 className="mt-6 text-lg font-semibold leading-7 tracking-tight">{member.name}</h3>
+                    <p className="text-sm leading-6 text-muted-foreground">{member.title}</p>
+                  </div>
+                )
               ))}
             </div>
           </div>

@@ -29,6 +29,7 @@ export function LandingHeader() {
     { name: 'Features', href: '#features' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Benefits', href: '#benefits' },
+    { name: 'About Us', href: '#about-us' },
   ];
 
   return (
