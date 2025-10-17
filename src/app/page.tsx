@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="py-16 md:py-24 bg-background">
+        <section id="about" className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
