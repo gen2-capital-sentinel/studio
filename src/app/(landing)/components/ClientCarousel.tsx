@@ -51,7 +51,7 @@ export function ClientCarousel() {
         <div className="container relative z-10 mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">How It Works</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4 text-lg text-muted-foreground font-bold">
                 Getting started on your journey to financial freedom is simple.
               </p>
             </div>
