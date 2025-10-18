@@ -50,9 +50,9 @@ export function ClientCarousel() {
         ></div>
         <div className="container relative z-10 mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Tailored for Your Success</h2>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Whether you're an individual investor, a business, or a financial advisor, our platform is designed to meet your unique needs.
+                Getting started on your journey to financial freedom is simple.
               </p>
             </div>
             <Carousel

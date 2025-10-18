@@ -28,27 +28,6 @@ export default function Home() {
     },
   ];
 
-  const howItWorks = [
-    {
-      icon: <UserPlus className="h-10 w-10 text-primary" />,
-      step: '01',
-      title: 'Create Your Account',
-      description: 'Sign up in minutes and tell us about your financial goals. Our platform will instantly generate a personalized investment plan for you.',
-    },
-    {
-      icon: <Banknote className="h-10 w-10 text-primary" />,
-      step: '02',
-      title: 'Fund Your Account',
-      description: 'Securely link your bank account and fund your portfolio with a one-time transfer or set up recurring deposits to grow your wealth over time.',
-    },
-    {
-      icon: <Landmark className="h-10 w-10 text-primary" />,
-      step: '03',
-      title: 'Invest with Intelligence',
-      description: "Approve your AI-generated plan and watch your money grow. Our platform monitors the market 24/7 and automatically adjusts your portfolio.",
-    },
-  ];
-  
   const benefits = [
     {
       title: 'Smart Investing',
@@ -122,33 +101,6 @@ export default function Home() {
         </section>
         
         <ClientCarousel />
-
-        <section id="how-it-works" className="py-16 md:py-24 bg-secondary">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Getting started on your journey to financial freedom is simple.
-              </p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              {howItWorks.map((item, index) => (
-                <Card key={item.step} className="relative flex flex-col items-center overflow-hidden text-center">
-                   <CardContent className="flex flex-col items-center p-8">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-md">
-                        {item.icon}
-                    </div>
-                    <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
-                    <p className="mt-2 text-muted-foreground">{item.description}</p>
-                    <div className="absolute -top-5 -right-5 text-8xl font-bold text-muted-foreground/5 -z-0">
-                        {item.step}
-                    </div>
-                   </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section id="benefits" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto grid items-center gap-12 px-4 md:grid-cols-2">
