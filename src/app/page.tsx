@@ -7,6 +7,7 @@ import { LandingFooter } from './(landing)/components/LandingFooter';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { DisclaimerModal } from './(landing)/components/DisclaimerModal';
+import { ClientCarousel } from './(landing)/components/ClientCarousel';
 
 export default function Home() {
   const features = [
@@ -120,7 +121,9 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="how-it-works" className="py-16 md:py-24 bg-background">
+        <ClientCarousel />
+
+        <section id="how-it-works" className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
@@ -132,7 +135,7 @@ export default function Home() {
               {howItWorks.map((item, index) => (
                 <Card key={item.step} className="relative flex flex-col items-center overflow-hidden text-center">
                    <CardContent className="flex flex-col items-center p-8">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary shadow-md">
+                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-md">
                         {item.icon}
                     </div>
                     <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
@@ -147,7 +150,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="benefits" className="py-16 md:py-24 bg-secondary">
+        <section id="benefits" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto grid items-center gap-12 px-4 md:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
