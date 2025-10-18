@@ -73,7 +73,7 @@ export function LandingFooter() {
             </div>
           </div>
           <div className="mt-12 border-t border-border pt-8">
-            <div className="text-xs text-muted-foreground space-y-4">
+            <div className="text-center text-xs text-muted-foreground space-y-4">
               <p>
                 Gen2Wealth® Management, a trading name of Premier Independent Investments UK Limited (PIIUK), is part of the Strategic Value Group. Registered in England and Wales (No. 03339739) with registered offices at C23G, The Print Rooms, Holly Farm Business Park, Honiley, Kenilworth, Warwickshire, CV8 1NP.
               </p>
