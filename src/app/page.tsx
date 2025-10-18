@@ -86,7 +86,7 @@ export default function Home() {
               The future of wealth is intelligent.
             </h1>
             <p className="mt-6 text-lg text-white/80 md:text-xl">
-              Gen2 Wealth combines advanced AI with expert financial strategies to build and protect your wealth for generations to come.
+              Harnessing AI and expert insight to build and protect your wealth.
             </p>
             <Button asChild size="lg" className="mt-8">
               <Link href="/signup">
