@@ -41,17 +41,16 @@ export function ClientCarousel() {
   return (
     <section id="how-it-works" className="relative py-16 md:py-24 bg-background overflow-hidden">
         <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center brightness-50"
             style={{ 
                 backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/tomasz-smal-_HJNQCoXVkU-unsplash.jpg')",
-                opacity: 0.1,
             }}
             data-ai-hint="abstract background"
         ></div>
         <div className="container relative z-10 mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-white">How It Works</h2>
+              <p className="mt-4 text-lg text-white/80">
                 Getting started on your journey to financial freedom is simple.
               </p>
             </div>
