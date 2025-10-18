@@ -29,7 +29,7 @@ export function LandingHeader() {
     { name: 'For Individuals', href: '#client-types' },
     { name: 'For Businesses', href: '#client-types' },
     { name: 'For Advisors', href: '#client-types' },
-    { name: 'About', href: '#about' },
+    { name: 'Fees and Charges', href: '#about' },
   ];
 
   const linkClassName = "text-sm font-medium text-foreground/80 transition-colors hover:text-primary";
