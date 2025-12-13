@@ -20,7 +20,7 @@ export function Hero() {
             data-ai-hint={heroImage.imageHint}
             />
         )}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
       <div className="relative z-10 mx-auto max-w-3xl px-4">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
