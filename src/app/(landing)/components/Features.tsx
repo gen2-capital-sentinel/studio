@@ -37,7 +37,7 @@ export function Features() {
           data-ai-hint={backgroundImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-white/80" />
+      <div className="absolute inset-0 bg-white/50" />
       <div className="container relative z-10 mx-auto px-4">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">A Smarter Way to Invest</h2>
@@ -47,7 +47,7 @@ export function Features() {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="text-center bg-white/50 backdrop-blur-lg border-white/30 text-foreground">
+            <Card key={index} className="text-center bg-white/30 backdrop-blur-lg border-white/30 text-foreground">
               <CardHeader className="items-center">
                  <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/30 shadow-md">
                     {feature.icon}
