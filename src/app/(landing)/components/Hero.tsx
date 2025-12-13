@@ -18,9 +18,10 @@ export function Hero() {
             style={{ objectFit: 'cover' }}
             priority
             data-ai-hint={heroImage.imageHint}
+            className="filter brightness-110"
             />
         )}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
       <div className="relative z-10 mx-auto max-w-3xl px-4">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
