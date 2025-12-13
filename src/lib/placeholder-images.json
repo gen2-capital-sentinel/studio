@@ -7,6 +7,12 @@
       "imageHint": "abstract background"
     },
     {
+      "id": "features-background",
+      "description": "Abstract background for features section",
+      "imageUrl": "https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/dao-en-wong.jpg",
+      "imageHint": "abstract lines"
+    },
+    {
       "id": "carousel-background",
       "description": "Abstract background for client carousel",
       "imageUrl": "https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/tomasz-smal-_HJNQCoXVkU-unsplash.jpg",
