@@ -33,7 +33,7 @@ export function Features() {
           alt={backgroundImage.description}
           fill
           style={{ objectFit: 'cover' }}
-          className="absolute inset-0"
+          className="absolute inset-0 blur-md"
           data-ai-hint={backgroundImage.imageHint}
         />
       )}
@@ -47,13 +47,13 @@ export function Features() {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="text-center bg-black/40 backdrop-blur-sm border-white/20 text-white">
+            <Card key={index} className="text-center bg-white/20 backdrop-blur-lg border-white/30 text-foreground">
               <CardHeader className="items-center">
-                 <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-black/20 shadow-md">
+                 <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-black/10 shadow-md">
                     {feature.icon}
                 </div>
                 <CardTitle>{feature.title}</CardTitle>
-                <CardDescription className="text-gray-300">{feature.description}</CardDescription>
+                <CardDescription className="text-muted-foreground">{feature.description}</CardDescription>
               </CardHeader>
             </Card>
           ))}
