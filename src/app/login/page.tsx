@@ -94,7 +94,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-sm">
         <CardHeader className="text-center">
           <div className="mb-4 flex justify-center">
-             <Link href="/"><Logo /></Link>
+             <Link href="/gen2-capital"><Logo /></Link>
           </div>
           <CardTitle>Welcome Back</CardTitle>
           <CardDescription>Enter your credentials to access your account</CardDescription>
