@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -12,6 +13,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { User, Briefcase, Handshake } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const clientTypes = [
   {
@@ -33,20 +35,24 @@ const clientTypes = [
     title: 'For Advisors',
     description: 'Empower your practice with next-generation tools. Leverage our AI analytics, streamlined client management, and comprehensive reporting to deliver superior value to your clients.',
     ctaText: 'Partner With Us',
-    ctaLink: '#',
+    ctaLink: '/gen2-capital',
   },
 ];
 
 export function ClientCarousel() {
+  const backgroundImage = PlaceHolderImages.find(img => img.id === 'carousel-background');
+
   return (
     <section id="how-it-works" className="relative py-16 md:py-24 bg-background overflow-hidden">
-        <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ 
-                backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/tomasz-smal-_HJNQCoXVkU-unsplash.jpg')",
-            }}
-            data-ai-hint="abstract background"
-        ></div>
+        {backgroundImage && (
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ 
+                    backgroundImage: `url('${backgroundImage.imageUrl}')`,
+                }}
+                data-ai-hint={backgroundImage.imageHint}
+            ></div>
+        )}
         <div className="absolute inset-0 bg-white/50"></div>
         <div className="container relative z-10 mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">

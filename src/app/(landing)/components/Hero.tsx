@@ -2,19 +2,24 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
+
   return (
     <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
       <div className="absolute inset-0">
-        <Image
-          src="https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/ian-schneider-TamMbr4okv4-unsplash.jpg"
-          alt="Modern cityscape background"
-          fill
-          style={{ objectFit: 'cover' }}
-          priority
-          data-ai-hint="cityscape background"
-        />
+        {heroImage && (
+            <Image
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+            data-ai-hint={heroImage.imageHint}
+            />
+        )}
         <div className="absolute inset-0 bg-black/50" />
       </div>
       <div className="relative z-10 mx-auto max-w-3xl px-4">
