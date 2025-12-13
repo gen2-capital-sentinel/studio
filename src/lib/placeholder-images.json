@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Modern cityscape background for hero section",
-      "imageUrl": "https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/ian-schneider-TamMbr4okv4-unsplash.jpg",
-      "imageHint": "cityscape background"
+      "description": "Abstract background for hero section",
+      "imageUrl": "https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/tomasz-smal-_HJNQCoXVkU-unsplash.jpg",
+      "imageHint": "abstract background"
     },
     {
       "id": "carousel-background",
