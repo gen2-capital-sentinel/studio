@@ -40,7 +40,6 @@ export function LandingHeader() {
   const businessLinks = [
       { name: 'Corporate Wealth', href: '#' },
       { name: 'Company Pension', href: '#' },
-      { name: 'Gen2 Capital', href: '/gen2-capital' },
   ]
 
   const linkClassName = "text-sm font-medium text-foreground/80 transition-colors hover:text-primary";
@@ -69,9 +68,9 @@ export function LandingHeader() {
                 ))}
               </DropdownMenuContent>
            </DropdownMenu>
-           <Link href="#" className={linkClassName}>
+           <Link href="/gen2-capital" className={linkClassName}>
                 For Advisors
-             </Link>
+           </Link>
         </nav>
         <div className="hidden md:flex items-center gap-4">
            <Button variant="ghost" asChild className={linkClassName}>
@@ -108,7 +107,7 @@ export function LandingHeader() {
                                 </Link>
                             ))}
                         </div>
-                        <Link href="#" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-foreground hover:text-primary">
+                        <Link href="/gen2-capital" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-foreground hover:text-primary">
                             For Advisors
                         </Link>
 
