@@ -111,16 +111,12 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     }
   }, [user, loading, router, isClient]);
 
-  if (loading || (!user && isClient) ) {
+  if (!isClient || loading || !user) {
     return (
       <div className="flex h-screen w-full items-center justify-center bg-background">
         <Loader2 className="h-12 w-12 animate-spin text-primary" />
       </div>
     );
-  }
-  
-  if (!user) {
-      return null;
   }
 
   const navItems = [
