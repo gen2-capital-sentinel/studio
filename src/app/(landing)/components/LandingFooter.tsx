@@ -13,7 +13,7 @@ export function LandingFooter() {
       { name: 'About Us', href: '#about' },
       { name: 'Careers', href: '#' },
       { name: 'Press', href: '#' },
-      { name: 'Contact', href: '#' },
+      { name: 'Contact', href: '#contact' },
     ],
     legal: [
       { name: 'Privacy Policy', href: '#' },
