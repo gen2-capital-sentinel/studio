@@ -26,7 +26,7 @@ const clientTypes = [
     title: 'For Businesses',
     description: 'Optimize your company\'s financial assets. We offer intelligent treasury management, corporate investment accounts, and customized financial planning to help your business thrive in a dynamic market.',
     ctaText: 'Corporate Solutions',
-    ctaLink: '#',
+    ctaLink: '/gen2-capital',
   },
   {
     icon: <Handshake className="h-10 w-10 text-primary" />,

@@ -4,12 +4,19 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/Logo';
 import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
 
 export function LandingHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,10 +34,14 @@ export function LandingHeader() {
 
   const navLinks = [
     { name: 'For Individuals', href: '#client-types' },
-    { name: 'For Businesses', href: '#client-types' },
-    { name: 'For Advisors', href: '#client-types' },
     { name: 'Fees & Charges', href: '#about' },
   ];
+
+  const businessLinks = [
+      { name: 'Corporate Wealth', href: '#' },
+      { name: 'Company Pension', href: '#' },
+      { name: 'Gen2 Capital', href: '/gen2-capital' },
+  ]
 
   const linkClassName = "text-sm font-medium text-foreground/80 transition-colors hover:text-primary";
 
@@ -46,6 +57,18 @@ export function LandingHeader() {
                 {link.name}
              </Link>
            ))}
+           <DropdownMenu>
+              <DropdownMenuTrigger className={cn(linkClassName, "flex items-center gap-1")}>
+                For Businesses <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className='bg-background/80 backdrop-blur-md border-border'>
+                {businessLinks.map((link) => (
+                  <DropdownMenuItem key={link.name} asChild>
+                    <Link href={link.href} className='text-black hover:text-white justify-center'>{link.name}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+           </DropdownMenu>
         </nav>
         <div className="hidden md:flex items-center gap-4">
            <Button variant="ghost" asChild className={linkClassName}>
@@ -74,6 +97,15 @@ export function LandingHeader() {
                                 {link.name}
                             </Link>
                         ))}
+                         <p className='text-lg font-medium text-foreground/80'>For Businesses</p>
+                         <div className='flex flex-col gap-2 pl-4'>
+                            {businessLinks.map((link) => (
+                                <Link key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-foreground hover:text-primary">
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
+
                     </nav>
                     <div className="mt-auto flex flex-col gap-4">
                          <Button variant="outline" asChild>
