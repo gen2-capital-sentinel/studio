@@ -2,6 +2,7 @@
 name = "studio"
 compatibility_date = "2024-11-01"
 pages_build_output_dir = ".vercel/output/static"
+compatibility_flags = [ "nodejs_compat" ]
 
 [vars]
 NEXT_PUBLIC_FIREBASE_API_KEY = "AIzaSyAni0m7EgGCdV4yVuXeOxABpr4u38soSS0"
@@ -11,6 +12,3 @@ NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = "studio-5183936027-d61dd.firebasestorage.a
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = "245185142675"
 NEXT_PUBLIC_FIREBASE_APP_ID = "1:245185142675:web:d340c998999d4cbe7e5266"
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID = "G-1CRY5T19LF"
-
-[compatibility_flags]
-compatibility_flags = [ "nodejs_compat" ]
